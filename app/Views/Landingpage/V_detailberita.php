@@ -86,10 +86,10 @@ End Page Title-->
             </div>
 
             <!--Sidebar Side-->
-            <div class="sidebar-side col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <!-- <div class="sidebar-side col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <aside class="sidebar">
 
-                    <!-- Search -->
+                   
                     <div class="sidebar-widget search-box-three">
                         <div class="sidebar-title-three">
                             <h2>Search</h2>
@@ -101,50 +101,8 @@ End Page Title-->
                             </div>
                         </form>
                     </div>
-
-                    <!-- Testimonial Search -->
-                    <div class="sidebar-widget-three testimonial-widget">
-                        <div class="widget-inner" style="background-image:url(/ikon/images/resource/testimonial-3.jpg)">
-                            <div class="testimonial-widget-carousel owl-carousel owl-theme">
-
-                                <!--Testimonial Block Widget-->
-                                <div class="testimonial-widget-block">
-                                    <div class="inner-box">
-                                        <div class="quote-icon">
-                                            <span class="icon flaticon-left-quote-2"></span>
-                                        </div>
-                                        <div class="text">Denouncing pleasure praising pain was born & our all will gives you will completed account of system.</div>
-                                        <div class="author">Marry Fenincy</div>
-                                    </div>
-                                </div>
-
-                                <!--Testimonial Block Widget-->
-                                <div class="testimonial-widget-block">
-                                    <div class="inner-box">
-                                        <div class="quote-icon">
-                                            <span class="icon flaticon-left-quote-2"></span>
-                                        </div>
-                                        <div class="text">Denouncing pleasure praising pain was born & our all will gives you will completed account of system.</div>
-                                        <div class="author">Marry Fenincy</div>
-                                    </div>
-                                </div>
-
-                                <!--Testimonial Block Widget-->
-                                <div class="testimonial-widget-block">
-                                    <div class="inner-box">
-                                        <div class="quote-icon">
-                                            <span class="icon flaticon-left-quote-2"></span>
-                                        </div>
-                                        <div class="text">Denouncing pleasure praising pain was born & our all will gives you will completed account of system.</div>
-                                        <div class="author">Marry Fenincy</div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
                 </aside>
-            </div>
+            </div> -->
 
         </div>
     </div>

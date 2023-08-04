@@ -17,7 +17,7 @@
         <div class="inner-container">
             <div class="row clearfix">
                 <!--Project Block Two-->
-                <?php foreach ($T_Galery as $tampil) : ?>
+                <?php foreach ($pagination as $tampil) : ?>
                     <div class="project-block-two col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box">
                             <div class="image">
@@ -31,16 +31,19 @@
                             </div>
                         </div>
                     </div>
+
                 <?php endforeach; ?>
             </div>
-
+            <?php
+            echo $pager->links('galery', 'pagination');
+            ?>
             <!--Styled Pagination-->
-            <ul class="styled-pagination text-center">
+            <!-- <ul class="styled-pagination text-center">
                 <li class="prev"><a href="#"><span class="fa fa-angle-left"></span></a></li>
                 <li><a href="#" class="active">1</a></li>
                 <li><a href="#">2</a></li>
                 <li class="next"><a href="#"><span class="fa fa-angle-right"></span></a></li>
-            </ul>
+            </ul> -->
             <!--End Styled Pagination-->
 
         </div>
