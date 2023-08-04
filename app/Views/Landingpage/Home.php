@@ -63,12 +63,13 @@
         </div>
     </div>
     <ul class="social-icon-two">
-        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+        <li><a href="https://www.facebook.com/bnnp.sulawesibarat.16"><span class="fa fa-facebook"></span></a></li>
+        <li><a href="https://www.instagram.com/infobnn_prov_sulbar/"><span class="fa fa-instagram"></span></a></li>
+        <li><a href="https://twitter.com/infobnnp_sulbar"><span class="fa fa-twitter"></span></a></li>
         <!-- <li><a href="#"><span class="fa fa-skype"></span></a></li> -->
-        <li><a href="#"><span class="fa-brands fa-tiktok"></span></a></li>
-        <li><a href="#"><span class="fa-brands fa-dribbble"></span></a></li>
-        <li><a href="#"><span class="fa-brands fa-youtube"></span></a></li>
+        <li><a href="https://www.tiktok.com/@bnnprovsulawesibarat"><span class="fa-brands fa-tiktok"></span></a></li>
+        <li><a href="https://sulbar.bnn.go.id/"><span class="fa-brands fa-dribbble"></span></a></li>
+        <li><a href="https://www.youtube.com/@bnnpsulawesibarat4468"><span class="fa-brands fa-youtube"></span></a></li>
     </ul>
 </section>
 
