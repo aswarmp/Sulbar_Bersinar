@@ -18,7 +18,7 @@
         <div class="row clearfix">
 
             <!--News Block Three-->
-            <?php foreach ($berita as $tampil) : ?>
+            <?php foreach ($pagination as $tampil) : ?>
                 <div class="news-block-three col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box">
                         <div class="image">
@@ -37,12 +37,9 @@
         </div>
 
         <!--Styled Pagination-->
-        <ul class="styled-pagination text-center">
-            <li class="prev"><a href="#"><span class="fa fa-angle-left"></span></a></li>
-            <li><a href="#" class="active">1</a></li>
-            <li><a href="#">2</a></li>
-            <li class="next"><a href="#"><span class="fa fa-angle-right"></span></a></li>
-        </ul>
+        <?php
+        echo $pager->links('berita', 'pagination');
+        ?>
         <!--End Styled Pagination-->
 
     </div>

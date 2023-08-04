@@ -76,7 +76,12 @@
     <div class="auto-container">
         <div class="outer-container">
             <div class="clearfix">
+                <div class="flash-data" data-flashdata="<?= session()->getFlashdata('sukses') ?>"></div>
+                <?php
+                if (session()->getFlashdata('sukses')) : ?>
 
+                    <?= session()->getFlashdata('sukses') ?>
+                <?php endif; ?>
                 <!--Services Block three-->
                 <div class="services-block-three col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box">

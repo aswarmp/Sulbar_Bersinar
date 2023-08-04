@@ -32,7 +32,9 @@ class Landingpage extends BaseController
     public function Galery()
     {
         $data = [
-            'T_Galery' => $this->M_galery->getgalery(),
+            'pagination' => $this->M_galery->orderBy('id_galery', 'desc')->paginate(4, 'galery'),
+            'pager' => $this->M_galery->pager,
+            // 'T_Galery' => $this->M_galery->getgalery(),
 
         ];
         echo view('Landingpage/Header');
@@ -51,7 +53,8 @@ class Landingpage extends BaseController
     public function Berita()
     {
         $data = [
-            'berita' => $this->M_berita->getBerita(),
+            'pagination' => $this->M_berita->orderBy('id_berita', 'desc')->paginate(4, 'berita'),
+            'pager' => $this->M_berita->pager,
         ];
         echo view('Landingpage/Header');
         echo view('Landingpage/V_berita', $data);

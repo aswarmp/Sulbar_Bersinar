@@ -40,7 +40,7 @@
 				<?php endif; ?>
 				<div class="form-row form-group">
 					<div class="form-holder">
-
+						<button type="button" id="tombol" onclick="Swal.fire('Hellow','Latihan SweetAlert','success')">Klik Saya</button>
 						<label for="">Nama</label>
 						<input type="text" name="nama" class="form-control" placeholder="Nama Lengkap">
 					</div>
@@ -85,7 +85,7 @@
 
 	<!-- Template created and distributed by Colorlib -->
 	<!-- swet alert -->
-
+	<script src="<?php echo base_url('sweetalert/sweetalert2.all.min.js') ?>"></script>
 </body>
 
 </html>

@@ -60,6 +60,18 @@
 <script src="<?php echo base_url('ikon/js/script.js') ?>"></script>
 <script src="https://kit.fontawesome.com/7918e7ba23.js" crossorigin="anonymous"></script>
 
+<script src="<?php echo base_url('sweetalert/sweetalert2.all.min.js') ?>"></script>
+<script>
+    const flashdata = $('.flash-data').data('flashdata');
+    if (flashdata) {
+        Swal({
+            title: 'Pendaftaran Layanan Lapinmas' + flashdata,
+            text: 'Berhasil',
+            type: 'success'
+        });
+    }
+</script>
+
 <!-- tamabahan untuk js -->
 
 </body>
