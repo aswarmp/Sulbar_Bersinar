@@ -111,7 +111,7 @@ class Berita extends BaseController
                 'gambar_2' => $gamabarBerita2,
                 'gambar_3' => $gamabarBerita3,
             ]);
-            session()->getFlashdata('sukses', 'Data  Berhasil ditambahkan');
+            session()->setFlashdata('sukses', 'Data  Berhasil ditambahkan', 'info');
             return redirect()->to('Halaman_berita');
         }
     }

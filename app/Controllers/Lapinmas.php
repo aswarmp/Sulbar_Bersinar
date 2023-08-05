@@ -85,7 +85,7 @@ class Lapinmas extends BaseController
                 'tanggal' => $this->request->getVar('tanggal'),
                 'status' => $this->request->getVar('status'),
             ]);
-            session()->setFlashdata('sukses', 'Data  Berhasil ditambahkan', 'success');
+            session()->setFlashdata('sukses', 'Data  Berhasil ditambahkan', 'info');
             return redirect()->to('/');
         }
     }

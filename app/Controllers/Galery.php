@@ -89,8 +89,8 @@ class Galery extends BaseController
                 'gambar_2' => $gamabarGalery2,
                 'gambar_3' => $gamabarGalery3,
             ]);
-            session()->getFlashdata('sukses', 'Data  Berhasil ditambahkan');
-            return redirect()->to('Halaman_galery');
+            session()->setFlashdata('sukses', 'Data  Berhasil ditambahkan', 'info');
+            return redirect()->to('/Halaman_galery');
         }
     }
     public function detail_galery($id_galery)

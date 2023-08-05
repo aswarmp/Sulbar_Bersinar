@@ -76,11 +76,13 @@
     <div class="auto-container">
         <div class="outer-container">
             <div class="clearfix">
-                <div class="flash-data" data-flashdata="<?= session()->getFlashdata('sukses') ?>"></div>
-                <?php
-                if (session()->getFlashdata('sukses')) : ?>
-
-                    <?= session()->getFlashdata('sukses') ?>
+                <?php if (!empty(session()->getFlashdata('sukses'))) : ?>
+                    <div class="alert alert-info alert-dismissible fade show" role="alert">
+                        <?php echo session()->getFlashdata('sukses'); ?>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                 <?php endif; ?>
                 <!--Services Block three-->
                 <div class="services-block-three col-md-4 col-sm-6 col-xs-12">
@@ -93,7 +95,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!--Services Block three-->
                 <div class="services-block-three col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box">

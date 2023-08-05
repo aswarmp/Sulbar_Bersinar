@@ -32,7 +32,7 @@
                                         <a type="button" href="Buat_berita" class="btn btn-primary" data-toggle="tooltip">Buat Berita</a>
                                     </div>
                                     <?php if (session()->getFlashdata('sukses') !== NULL) : ?>
-                                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <div class="alert alert-info alert-dismissible fade show" role="alert">
                                             <?php echo session()->getFlashdata('sukses'); ?>
                                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
