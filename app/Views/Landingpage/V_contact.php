@@ -1,5 +1,5 @@
 <!--Page Title / Style Two-->
-<section class="contact-banner-post" style="background-image:url(ikon/images/background/9.jpg)">
+<section class="contact-banner-post" style="background-image:url(ikon/images/background/1.png)">
     	<div class="auto-container">
         	<div class="upper-box">
             	<h2><span class="icon-box flaticon-mail"></span> Contact Our Team Today! <br> and Discuss About What You Need.</h2>
@@ -12,18 +12,18 @@
                     <!--Info Branch Block-->
                     <div class="info-branch-block col-md-4 col-sm-6 col-xs-12">
                     	<div class="inner-box">
-                        	<h3>Main Branch</h3>
-                            <div class="text">DE 198 Tech Road <br> Bridge Str, Newyork 10026 <br> United States.</div>
-                            <a href="#" class="direction">Get Direction</a>
+                        	<h3>Alamat</h3>
+                            <div class="text">Jl.Yos Sudarso <br> No.95 Mamuju <br> Sulawesi Barat.</div>
+                            <!-- <a href="#" class="direction">Get Direction</a> -->
                         </div>
                     </div>
                     
                     <div class="quick-contact-info col-md-4 col-sm-6 col-xs-12">
                     	<div class="inner-box">
-                        	<h3>Quick Contact</h3>
+                        	<h3>Call Center</h3>
                             <ul class="branch-list-contact">
-                            	<li><span class="icon flaticon-technology-2"></span> <strong>Phone:</strong> 936.452.8005</li>
-                                <li><span class="icon flaticon-note"></span> <strong>Email:</strong> Mailus@ikonteam.com</li>
+                            	<li><span class="icon flaticon-technology-2"></span> <strong>Phone:</strong> 0853 4828 0119</li>
+                                <!-- <li><span class="icon flaticon-note"></span> <strong>Email:</strong> Mailus@ikonteam.com</li> -->
                             </ul>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                             	<h3>Career Inquiries</h3>
                                 <div class="communicate-inner">
                                 	<div class="image">
-                                    	<img src="<?php echo base_url('ikon/images/resource/author-17.jpg')?>" alt="" />
+                                    	<img src="<?php echo base_url('ikon/images/resource/1.png')?>" alt="" />
                                     </div>
                                     <div class="name">Charles Mecky</div>
                                     <ul>
@@ -62,20 +62,7 @@
                                 </div>
                             </div>
                             
-                            <!--Communicate Box-->
-                            <div class="communicater-box col-md-6 col-sm-6 col-xs-12">
-                            	<h3>Marketing Department</h3>
-                                <div class="communicate-inner">
-                                	<div class="image">
-                                    	<img src="<?php echo base_url('ikon/images/resource/author-18.jpg')?>" alt="" />
-                                    </div>
-                                    <div class="name">Robert Fertly</div>
-                                    <ul>
-                                    	<li>Ph: 123.456.7890</li>
-                                        <li>E: marketing@ikonteam.com</li>
-                                    </ul>
-                                </div>
-                            </div>
+                           
                             
                         </div>
                     </div>

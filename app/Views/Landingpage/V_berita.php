@@ -1,5 +1,5 @@
 <!--Page Title / Style Two-->
-<section class="page-title style-two" style="background-image:url(ikon/images/background/9.jpg)">
+<section class="page-title style-two" style="background-image:url(ikon/images/background/1.png)">
     <div class="auto-container">
         <h1>Berita</h1>
         <ul class="page-breadcrumb">
