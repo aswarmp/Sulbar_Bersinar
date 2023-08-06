@@ -16,14 +16,26 @@
                             <div class="col-sm-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h5>Layanan Tes Urin</h5>
+                                        <h5>Rekap Tes Urin</h5>
                                     </div>
                                     <div class="card-block">
-                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                                        </p>
+                                        <div class="col-md-4">
+                                            <form action="proses_cetak_urin" method="post" target="_blank">
+                                                <div class="form-group">
+                                                    <label>Tanggal Awal</label>
+                                                    <input type="date" name="tglawal" class="form-control" placeholder="Judul Berita" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Tanggal Akhir</label>
+                                                    <input type="date" name="tglakhir" class="form-control" placeholder="Judul Berita" required>
+                                                </div>
+                                                <button type="submit" class="btn btn-block btn-info"><i class="fa fa-print"></i>Cetak</button>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-xl-12">
                                 <div class="card">
                                     <div class="card-header">
@@ -59,7 +71,9 @@
                                                                 <?php } ?>
                                                             </td>
                                                             <td>
-                                                                <button type="submit" class="btn btn-primary">Detail</button>
+                                                                <?php if ($info['status'] == 'selesai') { ?>
+                                                                    <button type="submit" class="btn btn-primary">Detail</button>
+                                                                <?php }  ?>
                                                             </td>
                                                         </tr>
                                                     <?php endforeach; ?>

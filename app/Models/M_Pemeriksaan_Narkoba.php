@@ -42,4 +42,8 @@ class M_Pemeriksaan_Narkoba extends Model
     {
         return $this->where(['id_pemeriksaan ' => $id_pemeriksaan])->first();
     }
+    public function cetak($tglawal, $tglakhir)
+    {
+        return $this->table('pemeriksaan_narkoba')->where('tanggal >=', $tglawal)->where('tanggal <=', $tglakhir)->where('status', 'selesai')->get();
+    }
 }

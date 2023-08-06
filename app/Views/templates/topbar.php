@@ -2,10 +2,7 @@
     <div class="m-header">
         <a class="mobile-menu" id="mobile-collapse1" href="javascript:"><span></span></a>
         <a href="index.html" class="b-brand">
-            <div class="b-bg">
-                <i class="feather icon-trending-up"></i>
-            </div>
-            <span class="b-title">Datta Able</span>
+            <span class="b-title">SULBAR BERSINAR</span>
         </a>
     </div>
     <a class="mobile-menu" id="mobile-header" href="javascript:">
@@ -14,15 +11,15 @@
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
             <li><a href="javascript:" class="full-screen" onclick="javascript:toggleFullScreen()"><i class="feather icon-maximize"></i></a></li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
                 <a class="dropdown-toggle" href="javascript:" data-toggle="dropdown">Dropdown</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="javascript:">Action</a></li>
                     <li><a class="dropdown-item" href="javascript:">Another action</a></li>
                     <li><a class="dropdown-item" href="javascript:">Something else here</a></li>
                 </ul>
-            </li>
-            <li class="nav-item">
+            </li> -->
+            <!-- <li class="nav-item">
                 <div class="main-search">
                     <div class="input-group">
                         <input type="text" id="m-search" class="form-control" placeholder="Search . . .">
@@ -34,10 +31,10 @@
                         </span>
                     </div>
                 </div>
-            </li>
+            </li> -->
         </ul>
         <ul class="navbar-nav ml-auto">
-            <li>
+            <!-- <li>
                 <div class="dropdown">
                     <a class="dropdown-toggle" href="javascript:" data-toggle="dropdown"><i class="icon feather icon-bell"></i></a>
                     <div class="dropdown-menu dropdown-menu-right notification">
@@ -88,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-            </li>
+            </li> -->
             <li>
                 <div class="dropdown drp-user">
                     <a href="javascript:" class="dropdown-toggle" data-toggle="dropdown">
@@ -96,7 +93,7 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right profile-notification">
                         <div class="pro-head">
-                            <img src="<?= base_url() ?>assets/images/user/default.jpg" class="img-radius" alt="User-Profile-Image">
+                            <img src="<?= base_url() ?>/assets/images/user/default.jpg" class="img-radius" alt="User-Profile-Image">
                             <span>Muh Hisyam</span>
                             <a href="<?= base_url('logout') ?>" class="dud-logout" title="Logout">
                                 <i class="feather icon-log-out"></i>
@@ -105,8 +102,8 @@
                         <ul class="pro-body">
                             <li><a href="javascript:" class="dropdown-item"><i class="feather icon-settings"></i> Settings</a></li>
                             <li><a href="javascript:" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
-                            <li><a href="message.html" class="dropdown-item"><i class="feather icon-mail"></i> My Messages</a></li>
-                            <li><a href="auth-signin.html" class="dropdown-item"><i class="feather icon-lock"></i> Lock Screen</a></li>
+                            <!-- <li><a href="message.html" class="dropdown-item"><i class="feather icon-mail"></i> My Messages</a></li>
+                            <li><a href="auth-signin.html" class="dropdown-item"><i class="feather icon-lock"></i> Lock Screen</a></li> -->
                         </ul>
                     </div>
                 </div>

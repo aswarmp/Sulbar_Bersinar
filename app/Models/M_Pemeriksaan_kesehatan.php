@@ -40,4 +40,8 @@ class M_Pemeriksaan_kesehatan  extends Model
     {
         return $this->where(['id_pemeriksaan_kesehatan ' => $id_pemeriksaan_kesehatan])->first();
     }
+    public function cetak($tglawal, $tglakhir)
+    {
+        return $this->table('pemeriksaan_kesehatan')->where('tanggal >=', $tglawal)->where('tanggal <=', $tglakhir)->where('status', 'selesai')->get();
+    }
 }

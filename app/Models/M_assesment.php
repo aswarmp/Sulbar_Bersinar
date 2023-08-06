@@ -30,7 +30,7 @@ class M_Assesment extends Model
         $query = $builder->getWhere(['status' => 'approve']);
         return $query;
     }
-    
+
     public function getinfo_konfirmasi()
     {
         $builder = $this->db->table('assesment');
@@ -41,5 +41,9 @@ class M_Assesment extends Model
     public function getTampil_konfirmasi($id_assesment = false)
     {
         return $this->where(['id_assesment' => $id_assesment])->first();
+    }
+    public function cetak($tglawal, $tglakhir)
+    {
+        return $this->table('assesment')->where('tanggal >=', $tglawal)->where('tanggal <=', $tglakhir)->where('status', 'selesai')->get();
     }
 }

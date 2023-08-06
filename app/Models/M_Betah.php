@@ -42,4 +42,8 @@ class M_Betah  extends Model
     {
         return $this->where(['id_betah  ' => $id_betah])->first();
     }
+    public function cetak($tglawal, $tglakhir)
+    {
+        return $this->table('betah')->where('tanggal >=', $tglawal)->where('tanggal <=', $tglakhir)->where('status', 'selesai')->get();
+    }
 }

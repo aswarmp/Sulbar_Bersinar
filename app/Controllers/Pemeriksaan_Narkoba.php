@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\M_Pemeriksaan_Narkoba;
+use Dompdf\Dompdf;
 
 class Pemeriksaan_Narkoba extends BaseController
 {
@@ -144,7 +145,7 @@ class Pemeriksaan_Narkoba extends BaseController
                 'jenis_layanan' => $this->request->getVar('jenis_layanan'),
                 'status' => $this->request->getVar('status'),
             ]);
-            // session()->getFlashdata('sukses', 'Data  Berhasil ditambahkan');
+            session()->setFlashdata('sukses', 'Konfirmasi Akan Dikirim Melalui Email Anda');
             return redirect()->to('/');
         }
     }
@@ -237,5 +238,29 @@ class Pemeriksaan_Narkoba extends BaseController
         } else {
             echo 'Gagal terkirim';
         }
+    }
+    public function proses_cetak_SuketNarkoba()
+    {
+        $tglawal = $this->request->getVar('tglawal');
+        $tglakhir = $this->request->getVar('tglakhir');
+        $datacetak = $this->M_Pemeriksaan_Narkoba->cetak($tglawal, $tglakhir);
+        $data = [
+            'datacetak' => $datacetak,
+            'tglawal' => $tglawal,
+            'tglakhir' => $tglakhir,
+        ];
+        $view = view('admin/cetak_layanan/V_narkoba', $data);
+        // instantiate and use the dompdf class
+        $dompdf = new Dompdf();
+        $dompdf->loadHtml($view);
+
+        // (Optional) Setup the paper size and orientation
+        $dompdf->setPaper('A4', 'landscape');
+
+        // Render the HTML as PDF
+        $dompdf->render();
+
+        // Output the generated PDF to Browser
+        $dompdf->stream('Laporan Pendaftaran', array("Attachment" => false));
     }
 }

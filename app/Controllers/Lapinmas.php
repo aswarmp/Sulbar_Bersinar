@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\M_LMayarakat;
+use Dompdf\Dompdf;
 
 class Lapinmas extends BaseController
 {
@@ -85,7 +86,7 @@ class Lapinmas extends BaseController
                 'tanggal' => $this->request->getVar('tanggal'),
                 'status' => $this->request->getVar('status'),
             ]);
-            session()->setFlashdata('sukses', 'Data  Berhasil ditambahkan', 'info');
+            session()->setFlashdata('sukses', 'Konfirmasi Akan Dikirim Melalui Email Anda');
             return redirect()->to('/');
         }
     }
@@ -93,10 +94,33 @@ class Lapinmas extends BaseController
     public function Proses_approve($id_info_masyarakat)
     {
         $this->M_LMasyarkat->find($id_info_masyarakat);
-        // d($id_info_masyarakat);
         $this->M_LMasyarkat->update($id_info_masyarakat, [
             'status' => 'konfirmasi',
         ]);
         return redirect()->to('/dashboard');
+    }
+    public function proses_cetak_informasi()
+    {
+        $tglawal = $this->request->getVar('tglawal');
+        $tglakhir = $this->request->getVar('tglakhir');
+        $datacetak = $this->M_LMasyarkat->cetak($tglawal, $tglakhir);
+        $data = [
+            'datacetak' => $datacetak,
+            'tglawal' => $tglawal,
+            'tglakhir' => $tglakhir,
+        ];
+        $view = view('admin/cetak_layanan/V_informasi', $data);
+        // instantiate and use the dompdf class
+        $dompdf = new Dompdf();
+        $dompdf->loadHtml($view);
+
+        // (Optional) Setup the paper size and orientation
+        $dompdf->setPaper('A4', 'landscape');
+
+        // Render the HTML as PDF
+        $dompdf->render();
+
+        // Output the generated PDF to Browser
+        $dompdf->stream('Laporan Pendaftaran', array("Attachment" => false));
     }
 }

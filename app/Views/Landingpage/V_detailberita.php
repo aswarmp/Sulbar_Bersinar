@@ -45,58 +45,48 @@ End Page Title-->
                             <p><?= $detail['keterangan_berita'] ?></p>
                             <div class="image">
                                 <div class="sidebar-widget-three testimonial-widget">
-                                    <div class="widget-inner" style="background-image:url(/ikon/images/resource/testimonial-3.jpg)">
-                                        <div class="testimonial-widget-carousel owl-carousel owl-theme">
+                                    <div class="testimonial-widget-carousel owl-carousel owl-theme">
 
-                                        <div class="slideshow-container">
-
-<!-- Full-width images with number and caption text -->
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="<?php echo base_url('ikon/images/resource/case-4.jpg')?>" style="width:100%">
-  <div class="text">Caption Text</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="<?php echo base_url('ikon/images/resource/case-4.jpg')?>" style="width:100%">
-  <div class="text">Caption Two</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="<?php echo base_url('ikon/images/resource/case-4.jpg')?>" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
-
-<!-- Next and previous buttons -->
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-<span class="dot" onclick="currentSlide(1)"></span>
-<span class="dot" onclick="currentSlide(2)"></span>
-<span class="dot" onclick="currentSlide(3)"></span>
-</div>
-                    
-                </div>
-            </div>
-
+                                        <div class="testimonial-widget-block">
+                                            <div class="inner-box">
+                                                <div class="image">
+                                                    <img src="/berita/<?= $detail['gambar_1'] ?>" alt="">
+                                                </div>
+                                            </div>
                                         </div>
+
+                                        <!--Testimonial Block Widget-->
+                                        <div class="testimonial-widget-block">
+                                            <div class="inner-box">
+                                                <div class="image">
+                                                    <img src="/berita/<?= $detail['gambar_2'] ?>" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--Testimonial Block Widget-->
+                                        <div class="testimonial-widget-block">
+                                            <div class="inner-box">
+                                                <div class="image">
+                                                    <img src="/berita/<?= $detail['gambar_3'] ?>" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
+
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-            </div>
 
-            <!--Sidebar Side-->
-            <!-- <div class="sidebar-side col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            </div>
+        </div>
+    </div>
+
+    <!--Sidebar Side-->
+    <!-- <div class="sidebar-side col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <aside class="sidebar">
 
                    
@@ -114,7 +104,7 @@ End Page Title-->
                 </aside>
             </div> -->
 
-        </div>
-    </div>
+</div>
+</div>
 </div>
 <!--End Blog Small Section-->

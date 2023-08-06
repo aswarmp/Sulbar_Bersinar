@@ -21,7 +21,7 @@
                     <div class="project-block-two col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box">
                             <div class="image">
-                                <img src="<?php echo base_url('ikon/images/resource/project-14.jpg') ?>" alt="" />
+                                <img src="/galery/<?= $tampil['gambar_1'] ?>" alt="" />
                                 <div class="overlay-box">
                                     <div class="overlay-inner">
                                         <h2><?= $tampil['keterangan_galery']; ?></h2>

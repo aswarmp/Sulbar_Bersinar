@@ -36,4 +36,9 @@ class M_LMayarakat extends Model
     {
         return $this->where(['id_info_masyarakat' => $id_info_masyarakat])->first();
     }
+
+    public function cetak($tglawal, $tglakhir)
+    {
+        return $this->table('informasi_masyarakat')->where('tanggal >=', $tglawal)->where('tanggal <=', $tglakhir)->where('status', 'selesai')->get();
+    }
 }

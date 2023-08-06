@@ -43,4 +43,9 @@ class M_Urin extends Model
     {
         return $this->where(['id_urin ' => $id_urin])->first();
     }
+
+    public function cetak($tglawal, $tglakhir)
+    {
+        return $this->table('urin')->where('tanggal >=', $tglawal)->where('tanggal <=', $tglakhir)->where('status', 'selesai')->get();
+    }
 }

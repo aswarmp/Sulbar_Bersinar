@@ -15,13 +15,13 @@
                     <!--Social Column-->
                     <div class="social-column col-md-6 col-sm-12 col-xs-12">
                         <ul class="social-icon-one">
-                        <li><a href="https://www.facebook.com/bnnp.sulawesibarat.16"><span class="fa fa-facebook"></span></a></li>
-        <li><a href="https://www.instagram.com/infobnn_prov_sulbar/"><span class="fa fa-instagram"></span></a></li>
-        <li><a href="https://twitter.com/infobnnp_sulbar"><span class="fa fa-twitter"></span></a></li>
-        <!-- <li><a href="#"><span class="fa fa-skype"></span></a></li> -->
-        <li><a href="https://www.tiktok.com/@bnnprovsulawesibarat"><span class="fa-brands fa-tiktok"></span></a></li>
-        <li><a href="https://sulbar.bnn.go.id/"><span class="fa-brands fa-dribbble"></span></a></li>
-        <li><a href="https://www.youtube.com/@bnnpsulawesibarat4468"><span class="fa-brands fa-youtube"></span></a></li>
+                            <li><a href="https://www.facebook.com/bnnp.sulawesibarat.16" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="https://www.instagram.com/infobnn_prov_sulbar/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+                            <li><a href="https://twitter.com/infobnnp_sulbar" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                            <!-- <li><a href="#"><span class="fa fa-skype"></span></a></li> -->
+                            <li><a href="https://www.tiktok.com/@bnnprovsulawesibarat" target="_blank"><span class="fa-brands fa-tiktok"></span></a></li>
+                            <li><a href="https://sulbar.bnn.go.id/" target="_blank"><span class="fa-brands fa-dribbble"></span></a></li>
+                            <li><a href="https://www.youtube.com/@bnnpsulawesibarat4468" target="_blank"><span class="fa-brands fa-youtube"></span></a></li>
                         </ul>
                     </div>
 
@@ -63,16 +63,8 @@
 <script src="https://kit.fontawesome.com/7918e7ba23.js" crossorigin="anonymous"></script>
 
 <script src="<?php echo base_url('sweetalert/sweetalert2.all.min.js') ?>"></script>
-<script>
-    const flashdata = $('.flash-data').data('flashdata');
-    if (flashdata) {
-        Swal({
-            title: 'Pendaftaran Layanan Lapinmas' + flashdata,
-            text: 'Berhasil',
-            type: 'success'
-        });
-    }
-</script>
+<script src="<?php echo base_url('sweetalert/alert.js') ?>"></script>
+
 
 <!-- tamabahan untuk js -->
 

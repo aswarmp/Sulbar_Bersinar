@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Datta Able Free Bootstrap 4 Admin Template</title>
+    <title>SULBAR BERSINAR</title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
@@ -18,7 +18,7 @@
     <meta name="author" content="CodedThemes" />
 
     <!-- Favicon icon -->
-    <link rel="icon" href="<?= base_url() ?>assets/images/favicon.ico" type="image/x-icon">
+    <!-- <link rel="icon" href="<?= base_url() ?>assets/images/favicon.ico" type="image/x-icon"> -->
     <!-- fontawesome icon -->
     <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/fontawesome/css/fontawesome-all.min.css">
     <!-- animation css -->

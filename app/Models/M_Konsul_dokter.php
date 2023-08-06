@@ -40,4 +40,8 @@ class M_Konsul_dokter extends Model
     {
         return $this->where(['id_konsul_dokter' => $id_konsul_dokter])->first();
     }
+    public function cetak($tglawal, $tglakhir)
+    {
+        return $this->table('konsul_dokter')->where('tanggal >=', $tglawal)->where('tanggal <=', $tglakhir)->where('status', 'selesai')->get();
+    }
 }

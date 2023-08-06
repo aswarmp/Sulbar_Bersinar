@@ -40,4 +40,9 @@ class M_Min  extends Model
     {
         return $this->where(['id_tat   ' => $id_tat])->first();
     }
+
+    public function cetak($tglawal, $tglakhir)
+    {
+        return $this->table('tat')->where('tanggal >=', $tglawal)->where('tanggal <=', $tglakhir)->where('status', 'selesai')->get();
+    }
 }

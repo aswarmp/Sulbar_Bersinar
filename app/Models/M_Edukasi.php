@@ -43,4 +43,8 @@ class M_Edukasi  extends Model
     {
         return $this->where(['id_edukasi   ' => $id_edukasi])->first();
     }
+    public function cetak($tglawal, $tglakhir)
+    {
+        return $this->table('edukasi')->where('tanggal >=', $tglawal)->where('tanggal <=', $tglakhir)->where('status', 'selesai')->get();
+    }
 }

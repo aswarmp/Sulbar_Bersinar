@@ -72,6 +72,8 @@ $routes->post('/Proses_konfirmasi_LI_masyarakat/(:segment)', 'Lpengaduan_masyara
 $routes->get('layana_pangaduan', 'Lapinmas::layana_pangaduan');
 $routes->post('Proses_pengaduan_masyarakat', 'Lapinmas::Proses_pengaduan_masyarakat');
 $routes->get('/Proses_approve/(:segment)', 'Lapinmas::Proses_approve/$1');
+$routes->post('/proses_cetak_informasi', 'Lapinmas::proses_cetak_informasi');
+
 
 // Layanan Konsul dokter 
 $routes->get('Konsul_Dokter', 'Konsul_dokter::KonsultasiDokter');
@@ -80,6 +82,8 @@ $routes->get('/Proses_approve_Konsul/(:segment)', 'Konsul_dokter::Proses_approve
 $routes->get('tampil_Konsul_dokter', 'Konsul_dokter::tampil_Konsul_dokter');
 $routes->get('/konfir_konsul/(:segment)', 'Konsul_dokter::konfir_konsul/$1');
 $routes->post('/Proses_konfirmasi_konsul_dokter/(:segment)', 'Konsul_dokter::Proses_konfirmasi_konsul_dokter/$1');
+$routes->post('/proses_cetak_konsul', 'Konsul_dokter::proses_cetak_konsul');
+
 
 // Asessment 
 $routes->get('/Asessment', 'Asessment::Asessment');
@@ -88,6 +92,7 @@ $routes->get('/Proses_approve_Assesment/(:segment)', 'Asessment::Proses_approve_
 $routes->get('/tampil_asesmen', 'Asessment::tampil_asesmen');
 $routes->get('/konfir_asesmen/(:segment)', 'Asessment::konfir_asesmen/$1');
 $routes->post('/Proses_konfirmasi_asesmen/(:segment)', 'Asessment::Proses_konfirmasi_asesmen/$1');
+$routes->post('/proses_cetak_Assesmen', 'Asessment::proses_cetak_Assesmen');
 
 // Pemeriksaan Narkoba 
 $routes->get('/Pemeriksaan_Narkoba', 'Pemeriksaan_Narkoba::Pemeriksaan_Narkoba');
@@ -96,6 +101,7 @@ $routes->get('/Proses_approve_Pemeriksaan_Narkoba/(:segment)', 'Pemeriksaan_Nark
 $routes->get('/tampil_suket_narkoba', 'Pemeriksaan_Narkoba::tampil_suket_narkoba');
 $routes->get('/proses_konfirmasi_suket_narkoba/(:segment)', 'Pemeriksaan_Narkoba::proses_konfirmasi_suket_narkoba/$1');
 $routes->post('/Proses_kirim_suket/(:segment)', 'Pemeriksaan_Narkoba::Proses_kirim_suket/$1');
+$routes->post('/proses_cetak_SuketNarkoba', 'Pemeriksaan_Narkoba::proses_cetak_SuketNarkoba');
 
 // Pemeriksaan kesehatan 
 $routes->get('/add_pemeriksaan_kesehatan', 'Pemeriksaan_Kesehatan::add_pemeriksaan_kesehatan');
@@ -105,6 +111,7 @@ $routes->get('/tampil_pemeriksaan_kesehatan', 'Pemeriksaan_Kesehatan::tampil_pem
 $routes->get('/konfirmasi_email_kesehatan/(:segment)', 'Pemeriksaan_Kesehatan::konfirmasi_email_kesehatan/$1');
 $routes->get('/proses_konfirmasi_suket_narkoba/(:segment)', 'Pemeriksaan_Kesehatan::proses_konfirmasi_suket_narkoba/$1');
 $routes->post('/Proses_konfirmasi_suket_kesehatan/(:segment)', 'Pemeriksaan_Kesehatan::Proses_konfirmasi_suket_kesehatan/$1');
+$routes->post('/proses_cetak_SuketKesehatan', 'Pemeriksaan_Kesehatan::proses_cetak_SuketKesehatan');
 
 // betah besuk  
 $routes->get('add_betah', 'Betah::add_betah');
@@ -113,6 +120,8 @@ $routes->get('/Proses_approve_Betah/(:segment)', 'Betah::Proses_approve_Betah/$1
 $routes->get('/tampil_betah', 'Betah::tampil_betah');
 $routes->get('/konfirmasi_betah/(:segment)', 'Betah::konfirmasi_betah/$1');
 $routes->post('/Proses_konfirmasi_betah/(:segment)', 'Betah::Proses_konfirmasi_betah/$1');
+$routes->post('/proses_cetak_Betah', 'Betah::proses_cetak_Betah');
+
 
 // TAT
 $routes->get('add_Tat', 'Min::add_Tat');
@@ -121,6 +130,8 @@ $routes->get('/Proses_approve_Min/(:segment)', 'Min::Proses_approve_Min/$1');
 $routes->get('/tampil_permintaan_tat', 'Min::tampil_permintaan_tat');
 $routes->get('/konfirmasi_Min/(:segment)', 'Min::konfirmasi_Min/$1');
 $routes->post('/Proses_konfirmasi_Min/(:segment)', 'Min::Proses_konfirmasi_Min/$1');
+$routes->post('/proses_cetak_min', 'Min::proses_cetak_min');
+
 
 // Sosialisasi
 $routes->get('add_Sosialisasi', 'Sosialisasi::add_Sosialisasi');
@@ -129,6 +140,7 @@ $routes->get('/Proses_approve_Edukasi/(:segment)', 'Sosialisasi::Proses_approve_
 $routes->get('/tampil_sosialisasi', 'Sosialisasi::tampil_sosialisasi');
 $routes->get('/konfirmasi_sosialisasi/(:segment)', 'Sosialisasi::konfirmasi_sosialisasi/$1');
 $routes->post('/Proses_konfirmasi_sosialisasi/(:segment)', 'Sosialisasi::Proses_konfirmasi_sosialisasi/$1');
+$routes->post('/proses_cetak_sosialisasi', 'Sosialisasi::proses_cetak_sosialisasi');
 
 // Tes Urine
 $routes->get('Add_TesUrine', 'Urin::Add_TesUrine');
@@ -137,6 +149,8 @@ $routes->get('/Proses_approve_urin/(:segment)', 'Urin::Proses_approve_urin/$1');
 $routes->get('/tampil_tes_urin', 'Urin::tampil_tes_urin');
 $routes->get('/konfirmasi_Urin/(:segment)', 'Urin::konfirmasi_Urin/$1');
 $routes->post('/Proses_konfirmasi_Urin/(:segment)', 'Urin::Proses_konfirmasi_Urin/$1');
+$routes->post('/proses_cetak_urin', 'Urin::proses_cetak_urin');
+
 // $routes->get('Sosialisasi', 'Landingpage::Sosialisasi');
 /*
  * --------------------------------------------------------------------
